@@ -210,7 +210,7 @@ int main(int argc, char * argv[]) {
         if ( signo != SIGALRM ) {
             fprintf(stderr, "unexpected signal\n");
             continue;
-            //break; //some xcode magics cause an unknown signal the first time sigwait start(or maybe first time sigalrm occured). so I have to replace it with continue for run in xcode.
+            //break; //some xcode magic cause an unknown signal the first time sigwait start(or maybe first time sigalrm occured). so I have to replace it with continue for run in xcode.
         }
         
         pcap_breakloop(handle_in);
